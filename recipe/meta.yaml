@@ -1,5 +1,5 @@
 {% set name = "pysindy" %}
-{% set version = "0.15.3" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4ce8409b82d3fa309b0dc9d28faabb21c977f4d41eca76c750bff8ecd095ba9a
+  sha256: 3f3d1448ef77579abd95c6741a7d3a3f63ced1ac58f253ca4b4198c900dc1b2c
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Sparse Identification of Nonlinear Dynamics'
+  summary: Sparse Identification of Nonlinear Dynamics
   doc_url: https://pysindy.readthedocs.io
   dev_url: https://github.com/dynamicslab/pysindy
 

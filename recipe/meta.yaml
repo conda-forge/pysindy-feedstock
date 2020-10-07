@@ -21,6 +21,7 @@ requirements:
     - setuptools_scm
     - setuptools_scm_git_archive
   run:
+    - derivative
     - numpy
     - python
     - scikit-learn >=0.23

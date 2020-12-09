@@ -5,11 +5,13 @@ Home: https://github.com/dynamicslab/pysindy
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pysindy-feedstock/blob/master/LICENSE.txt)
 
 Summary: Sparse Identification of Nonlinear Dynamics
 
+Development: https://github.com/dynamicslab/pysindy
 
+Documentation: https://pysindy.readthedocs.io
 
 Current build status
 ====================

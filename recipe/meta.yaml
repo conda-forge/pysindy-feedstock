@@ -1,5 +1,5 @@
 {% set name = "pysindy" %}
-{% set version = "1.5.1" %}
+{% set version = "1.7.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0835e87af8f12bfc7f6a51541d319a0d15bfc4fa2dac7c7489887a1683dc4baa
+  sha256: a99c99b7a1e032e53113e2174abcf22d04ce1f0404deb8994fc4e3b6d34c7820
 
 build:
   noarch: python
@@ -22,13 +22,14 @@ requirements:
     - setuptools_scm
     - setuptools_scm_git_archive
   run:
-    - cvxpy
+    - cmake
     - derivative
     - matplotlib-base
     - numpy
     - python >={{ python_min }}
     - scikit-learn >=0.23
     - scipy
+    - scs>=2.1,!=2.1.4
 
 test:
   requires:

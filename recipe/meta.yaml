@@ -22,6 +22,7 @@ requirements:
     - setuptools_scm
     - setuptools_scm_git_archive
   run:
+    - cvxpy  # not listed upstream, but required
     - derivative
     - numpy
     - python >={{ python_min }}

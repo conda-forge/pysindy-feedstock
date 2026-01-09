@@ -1,5 +1,5 @@
 {% set name = "pysindy" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a619980319d48ef0bfb364cfdf3a00f8ec585d69d32b92980bf79e89c43cf392
+  sha256: 369659db632e72e670b64cfd79fd3c0b9efc8e3a36f0c35f4f11b844e863bb08
 
 build:
   noarch: python
